@@ -8,9 +8,11 @@ $size: 50px;
 $unit: $size / 16;
 
 /* Preloader */
-// body {
-//   overflow: hidden;
-// }
+body {
+  overflow: hidden;
+}
+.center-block {float: none; margin: 0 auto;}
+
 @keyframes spinner {
   0% { transform: rotate(0); }
   100% { transform: rotate(360deg); }
@@ -255,7 +257,7 @@ $unit: $size / 16;
   padding-bottom:$section-padding;
   h1 {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: -2px;
     transition: all 1s ease;
@@ -595,4 +597,59 @@ h2 {
   i {
     margin-right: 0.5rem;
   }
+}
+
+/// WEDDING
+
+// Welcome
+
+.w-welcome {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  // color: white;
+  h2 {
+    @include grid-column(6);
+    float: left;
+    // color: white;
+    border-bottom: 1px solid black;
+  }
+  .text {
+    padding-top: 3rem;
+    @include grid-column(6);
+    float: right;
+  }
+}
+
+// OFFERS
+
+.w-offer {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  h4 {
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+}
+.round {
+  border-radius: 50%;
+}
+
+.w-offer-image {
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  margin: 0px auto;
+}
+.w-offer-image-1 {
+  background-image: url("../img/w-offer-image-1.JPG");
+}
+.w-offer-image-2 {
+  background-image: url("../img/w-offer-image-2.JPG");
+}
+.w-offer-image-3 {
+  background-image: url("../img/w-offer-image-3.JPG");
+}
+.w-offer-image-4 {
+  background-image: url("../img/w-offer-image-4.JPG");
 }
