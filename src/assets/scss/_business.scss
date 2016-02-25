@@ -1,0 +1,29 @@
+.welcome-business {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  // background: url('https://static.pexels.com/photos/9494/portrait-nyon.jpeg') no-repeat center top;
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-color: white;
+  color: black;
+  h2 {
+    @include grid-column(6);
+    float: left;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  .text {
+    padding-top: 3rem;
+    @include grid-column(6);
+    float: right;
+  }
+}
+
+.companies {
+  background: $dark-bg;
+  color: white;
+  h2 {
+    color: white;
+    padding-bottom: 20px;
+  }
+}

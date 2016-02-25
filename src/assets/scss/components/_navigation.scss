@@ -1,0 +1,106 @@
+// Header
+// Navigation
+.header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  .title-bar {
+    background: rgba(0,0,0,0);
+    height: auto;
+    padding: 0;
+    .title-bar-title {
+      font-size: 100px;
+      color: red;
+      transition: all 0.5s ease;
+      a{
+        transition: all 0.5s ease;
+        &:hover {
+        color: lighten(red, 10);
+        }
+      }
+    }
+    .menu > li {
+      padding: 20px 30px;
+      transition: all 0.5s ease;
+      &:hover {
+        background:red;
+        cursor: pointer;
+        a, button {
+          color:white;
+        }
+      }
+    }
+    .menu > li > a,
+    .menu > li > button {
+        color: black;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+  }
+  .is-stuck {
+    background: rgba(white,1);
+    transition: all 1s ease;
+    padding:0;
+    .title-bar-title {font-size: 55px;}
+    .menu > li > a,
+    .menu > li > button {
+        color: $dark-bg;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    .mobile-toggle {
+      button {
+        color: red;
+        font-size: 4vw;
+        font-weight: 700;
+        padding: 20px;
+      }
+    }
+    .title-bar {
+      background: white;
+      height: auto;
+      padding: 0;
+      .title-bar-title {
+        display: none;
+      }
+      .title-bar-right {
+        float: none;
+      }
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+      }
+      .menu > li {
+        padding: 20px 30px;
+        width: 60%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+        border-bottom: 1px solid rgba(black,0.3);
+        margin: 0 auto;
+        &:hover {
+          background:red;
+          cursor: pointer;
+          a, button {
+            color:white;
+          }
+        }
+      }
+      .menu > li > a,
+      .menu > li > button {
+          color: black;
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+          font-weight: 800;
+        }
+    }
+  }
+}
