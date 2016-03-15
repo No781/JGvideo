@@ -1,0 +1,401 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JG Video</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            });
+        //]]>
+    </script>
+  </head>
+  <body>
+    <div id="preloader">
+        <div id="status">
+          <div class="whirlpool">
+            <div class="ring ring1"></div>
+            <div class="ring ring2"></div>
+            <div class="ring ring3"></div>
+            <div class="ring ring4"></div>
+            <div class="ring ring5"></div>
+            <div class="ring ring6"></div>
+            <div class="ring ring7"></div>
+            <div class="ring ring8"></div>
+            <div class="ring ring9"></div>
+          </div>
+        </div>
+    </div>
+    
+    
+    <nav class="header" data-sticky-container>
+      <div class="title-bar mobile-toggle" data-responsive-toggle="main-menu" data-hide-for="large">
+        <button class="" type="button" data-toggle>MENU</button>
+      </div>
+      <div class="title-bar" id="main-menu" data-animation-in="slide-in-up" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar-title"><a href="index.html" class="menu-text">JG</a></div>
+        <div class="title-bar-right">
+          <ul class="menu" data-dropdown-menu>
+            <li><a href="wedding.html">Wedding</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="creative.html">Creative</a></li>
+            <li><button data-toggle="aboutMeModal">About Me</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <section class="hero">
+      <div class="row intro">
+        <div class="small-12 medium-12 large-7 columns text-center center-block">
+          <h1 class="show-for-small hide-for-large"><strong>JG</strong>WEDDING</h1>
+          <h2 class="show-for-large"><strong>JG</strong>WEDDING</h1>
+          <p class="subtitle"></p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="w-welcome">
+      <div class="row">
+        <h2><strong>JG</strong> WEDDING</h2>
+        <div class="text">
+          <h4>Ihr Hochzeitsfilm</h4>
+          <p><strong>JG VIDEO</strong> filmt die Feier im Standesamt mit allem Drum und Dran (Fotoshooting, Apéro, Eindrücke). Die Ausrüstung und die Anzahl Kameras sind nach Ihren Wünschen einsetzbar.</p>
+          <h4>Individuelle Wünsche</h4>
+          <p>Haben Sie spezielle Wünsche? Wollen Sie zusätzlich Drohnenaufnahmen, im Voraus gedrehte Szenen für Einspielungen am Hochzeitsabend oder Filme in 4K? Für JG VIDEO soll alles möglich sein. Nehmen Sie Kontakt auf und fragen Sie nach einer Offerte!</p>
+          <button type="button" class="alert hollow button" name="About Me" data-toggle="aboutMeModal">Kontakt</button>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="w-offer">
+      <!-- <div class="row expanded">
+        <div class="small-6 medium-3 columns">
+          <div class="round w-offer-image w-offer-image-1"></div>
+          <div class="">
+            <h4 class="text-center">Standesamt</h4>
+            <p><strong>JG VIDEO</strong> filmt die Feier im Standesamt mit allem Drum und Dran (Fotoshooting, Apéro, Eindrücke). Die Ausrüstung und die Anzahl Kameras sind nach Ihren Wünschen einsetzbar.</p>
+          </div>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <div class="round w-offer-image w-offer-image-2"></div>
+          <div class="">
+            <h4 class="text-center">Kirche</h4>
+            <p><strong>JG VIDEO</strong> filmt die kirchliche Feier mit mindestens einer Standkamera und einer geführten "Flying-Cam". Auch umfangreichere Aufnahmen sind möglich: <strong>JG VIDEO</strong> arbeitet gerne mit seinen Film-Partnern zusammen</p>
+          </div>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <div class="round w-offer-image w-offer-image-3"></div>
+          <div class="">
+            <h4 class="text-center">Apéro</h4>
+            <p><strong>JG VIDEO</strong> filmt den Apéro und die Feierlichkeit nach der Kirche und fängt emotionale Bilder und Statements der Gäste ein.</p>
+          </div>
+        </div>
+        <div class="small-6 medium-3 columns">
+            <div class="round w-offer-image w-offer-image-4"></div>
+          <div class="">
+            <h4 class="text-center">Abendprogramm</h4>
+            <p><strong>JG VIDEO</strong> filmt den ganzen Abend lang vor und hinter der Kulisse Ihres Unterhaltungsprogramms bis der Tanzboden glüht.</p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="row expanded pb">
+          <div class="small-6 columns w-offer-image-l w-offer-image-1"></div>
+          <div class="small-6 columns text">
+            <h4 class="text-center">Standesamt</h4>
+            <p><strong>JG VIDEO</strong> filmt die Feier im Standesamt mit allem Drum und Dran (Fotoshooting, Apéro, Eindrücke). Die Ausrüstung und die Anzahl Kameras sind nach Ihren Wünschen einsetzbar.</p>
+          </div>
+        </div>
+        <div class="row expanded pb">
+          <div class="small-6 columns w-offer-image-l w-offer-image-2"></div>
+          <div class="small-6 columns text">
+            <h4 class="text-center">Kirche</h4>
+            <p><strong>JG VIDEO</strong> filmt die kirchliche Feier mit mindestens einer Standkamera und einer geführten "Flying-Cam". Auch umfangreichere Aufnahmen sind möglich: <strong>JG VIDEO</strong> arbeitet gerne mit seinen Film-Partnern zusammen</p>
+          </div>
+        </div>
+        <div class="row expanded pb">
+          <div class="small-6 columns w-offer-image-l w-offer-image-3"></div>
+          <div class="small-6 columns text">
+            <h4 class="text-center">Apéro</h4>
+            <p><strong>JG VIDEO</strong> filmt den Apéro und die Feierlichkeit nach der Kirche und fängt emotionale Bilder und Statements der Gäste ein.</p>
+          </div>
+        </div>
+        <div class="row expanded pb">
+          <div class="small-6 columns w-offer-image-l w-offer-image-4"></div>
+          <div class="small-6 columns text">
+            <h4 class="text-center">Abendprogramm</h4>
+            <p><strong>JG VIDEO</strong> filmt den ganzen Abend lang vor und hinter der Kulisse Ihres Unterhaltungsprogramms bis der Tanzboden glüht.</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="row small-collapse">
+        <div class="small-12 medium-6 columns small-collapse pb w-offer-image-l w-offer-image-1">
+          <div class="text"><h4 class="text-left">Standesamt</h4>
+            <p><strong>JG VIDEO</strong> filmt die Feier im Standesamt mit allem Drum und Dran (Fotoshooting, Apéro, Eindrücke). Die Ausrüstung und die Anzahl Kameras sind nach Ihren Wünschen einsetzbar.</p>
+                </div></div>
+        <div class="small-12 medium-6 columns pb w-offer-image-l w-offer-image-2">
+          <div class="text"><h4 class="text-left">Kirche</h4>
+            <p><strong>JG VIDEO</strong> filmt die kirchliche Feier mit mindestens einer Standkamera und einer geführten "Flying-Cam". Auch umfangreichere Aufnahmen sind möglich: <strong>JG VIDEO</strong> arbeitet gerne mit seinen Film-Partnern zusammen</p>
+                </div></div>
+        <div class="small-12 medium-6 columns pb w-offer-image-l w-offer-image-3">
+          <div class="text"><h4 class="text-left">Apéro</h4>
+            <p><strong>JG VIDEO</strong> filmt den Apéro und die Feierlichkeit nach der Kirche und fängt emotionale Bilder und Statements der Gäste ein.</p>
+                </div></div>
+        <div class="small-12 medium-6 columns pb w-offer-image-l w-offer-image-4">
+          <div class="text"><h4 class="text-left">Abendprogramm</h4>
+            <p><strong>JG VIDEO</strong> filmt den ganzen Abend lang vor und hinter der Kulisse Ihres Unterhaltungsprogramms bis der Tanzboden glüht.</p>
+                </div></div>
+      </div>
+    </section>
+    
+    
+    <section class="feed">
+      <div class="row text-center">
+        <h2>Recent Work</h2>
+      </div>
+      <div class="row small-up-1 medium-up-2">
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-1"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-2"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-3"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-4"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-5"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="column" id="hi" data-toggle="videoModal">
+          <div class="picture-6"></div>
+          <div class="desc">
+            <h4>Hi</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="testimonials">
+      <div class="testimonial-wrap">
+        <div class="row text-center" style="padding-bottom:50px;">
+          <h1>Testimonials</h1>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+          	<div class="row">
+          		<div class="small-2 large-2 columns testimonial">
+          			<div class="quote-marks">&#8220;</div>
+          		</div>
+          		<div class="small-10 large-10 columns testimonial">
+          			<div class="quote">
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+          			</div>
+          			<div class="student">
+          				<div class="photo"> </div>
+          				<p>John Doe</p>
+          				<p>Important person, some Company</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <div class="small-12 medium-4 columns">
+          	<div class="row">
+          		<div class="small-2 large-2 columns testimonial">
+          			<div class="quote-marks">&#8220;</div>
+          		</div>
+          		<div class="small-10 large-10 columns testimonial">
+          			<div class="quote">
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+          			</div>
+          			<div class="student">
+          				<div class="photo"> </div>
+          				<p>John Doe</p>
+          				<p>Important person, some Company</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+          <div class="small-12 medium-4 columns">
+          	<div class="row">
+          		<div class="small-2 large-2 columns testimonial">
+          			<div class="quote-marks">&#8220;</div>
+          		</div>
+          		<div class="small-10 large-10 columns testimonial">
+          			<div class="quote">
+          				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+          			</div>
+          			<div class="student">
+          				<div class="photo"> </div>
+          				<p>John Doe</p>
+          				<p>Important person, some Company</p>
+          			</div>
+          		</div>
+          	</div>
+          </div>
+        </div>
+    	</div>
+    </section>
+    
+    
+    <section class="modals">
+      <div id="aboutMeModal" class="reveal full" data-animation-in="slide-in-up" data-animation-out="slide-out-down" data-reveal>
+        <div class="row aboutme">
+          <div class="small-2 medium-4 columns">
+          </div>
+          <div class="small-10 medium-8 columns">
+            <h1>HEEY</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <form data-abide novalidate>
+          <h3>Get in contact:</h3><br>
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> There are some errors in your form.</p>
+          </div>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <label>Your Name
+                <input type="text" placeholder="Name">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Your Surname
+                <input type="text" placeholder="Surname">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Your E-Mail
+                <input type="email" placeholder="mail@example.com" aria-describedby="exampleHelpText" required pattern="mail">
+                <span class="form-error">
+                  Yo, you had better fill this out, it's required.
+                </span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Your Phone Number
+                <input type="tel" placeholder="+4179 960 52 84" aria-describedby="exampleHelpTex" data-abide-ignore>
+              </label>
+            </div>
+            <div class="small-12 columns">
+              <label>Title
+                <input type="text" placeholder="Example Title" aria-describedby="exampleHelpTex">
+              </label>
+            </div>
+            <div class="small-12 columns">
+              <label>Message
+                <textarea rows="8" cols="40" placeholder="Your Message" aria-describedby="exampleHelpTex"></textarea>
+              </label>
+            </div>
+            <fieldset class="large-6 columns right">
+              <button class="button expanded hollow alert" type="submit" value="Submit">Submit</button>
+            </fieldset>
+          </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- video modal -->
+      <div id="videoModal" class="reveal large" data-reveal>
+        <div class="flex-video widescreen ">
+          <iframe src="http://player.vimeo.com/video/60122989" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    
+    
+    <footer class="footer">
+      <div class="row">
+        <div class="small-12 medium-6 medium-push-6 columns">
+          <p class="logo show-for-small-only"><i class="fi-target"></i>JG VIDEO</p>
+          <form class="footer-form">
+            <div class="row">
+              <div class="medium-9 medium-push-3 columns">
+                <label>
+                  <label for="email" class="contact">Contact Me</label>
+                  <input type="email" id="email" placeholder="Email Address" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="medium-9 medium-push-3 columns">
+                <label>
+                  <textarea rows="5" id="message" placeholder="Message"></textarea>
+                </label>
+              </div>
+              <div class="row">
+                <div class="medium-9 medium-push-3 columns">
+                  <button class="submit" type="submit" value="Submit">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="small-12 medium-6 medium-pull-6 columns">
+          <p class="logo hide-for-small-only"><i class="fi-target"></i>JG VIDEO</p>
+          <p class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Wedding</a>
+            <a href="#">Business</a>
+            <a href="#">Creative</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </p>
+          <ul class="inline-list social">
+            <a href="#"><i class="fi-social-facebook"></i></a>
+            <a href="#"><i class="fi-social-twitter"></i></a>
+            <a href="#"><i class="fi-social-linkedin"></i></a>
+            <a href="#"><i class="fi-social-github"></i></a>
+          </ul>
+          <p class="copywrite">Copywrite not copywrite © 2015</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
